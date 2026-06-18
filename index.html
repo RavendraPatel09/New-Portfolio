@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAVENDRA PATEL — Full Stack Developer</title>
+  <meta name="description" content="Ravendra Patel — Aspiring Software Developer. Building scalable solutions with Python, C++, JavaScript, React & Flask. Explore my projects, skills, and journey." />
+  <meta name="author" content="Ravendra Patel" />
+  <meta name="keywords" content="Ravendra Patel, Full Stack Developer, Python, C++, JavaScript, React, Portfolio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ravendra Patel — Full Stack Developer" />
+  <meta property="og:description" content="Aspiring Software Developer building scalable solutions with clean code." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/231525544?v=4" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Animated Background -->
+  <div class="bg-mesh"></div>
+  <div class="grid-overlay"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">RP.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO SECTION ═══════════ -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title">
+          Building the Future,
+          <span class="name-gradient">One Line at a Time.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Hey, I'm <strong>Ravendra Patel</strong> — an aspiring software developer from Madhya Pradesh, India.
+          I love crafting scalable solutions, mastering DSA, and exploring new technologies that push boundaries.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-rocket"></i> View My Work
+          </a>
+          <a href="https://github.com/RavendraPatel09" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">15<span class="plus">+</span></div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">5<span class="plus">+</span></div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">500<span class="plus">+</span></div>
+            <div class="stat-label">Contributions</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-orb"></div>
+  </section>
+
+  <!-- ═══════════ ABOUT SECTION ═══════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image-frame">
+            <img src="https://avatars.githubusercontent.com/u/231525544?v=4" alt="Ravendra Patel" />
+          </div>
+          <div class="about-float-card">
+            <div class="icon">📍</div>
+            <div>
+              <div class="label">Based in</div>
+              <div class="value">MP, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal reveal-delay-2">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-title">
+            Passionate about <span class="highlight">Code & Innovation</span>
+          </h2>
+          <p>
+            I'm Ravendra Patel — an aspiring software developer who thrives on solving complex problems
+            with elegant code. Currently focused on mastering Data Structures & Algorithms, building
+            full-stack applications, and exploring database systems.
+          </p>
+          <p>
+            I believe in writing clean, maintainable code that scales. From building AI-powered resume analyzers
+            to smart dairy marketplaces, I love turning ideas into reality. My journey is fueled by curiosity
+            and a relentless drive to learn.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">🐍 Python</span>
+            <span class="about-tag">⚡ C++</span>
+            <span class="about-tag">🌐 JavaScript</span>
+            <span class="about-tag">⚛️ React</span>
+            <span class="about-tag">🌿 Flask</span>
+            <span class="about-tag">🗄️ SQL</span>
+            <span class="about-tag">🔥 DSA</span>
+            <span class="about-tag">🎨 CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS SECTION ═══════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">What I Do</span>
+        <h2 class="section-title">
+          Skills & <span class="highlight">Expertise</span>
+        </h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Skill 1: Languages -->
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon purple">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Programming Languages</h3>
+          <p>Strong foundation in multiple languages with a focus on problem-solving and algorithmic thinking.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <!-- Skill 2: Frontend -->
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon cyan">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, dynamic user interfaces with modern frameworks and pixel-perfect designs.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Tailwind</span>
+            <span class="skill-tag">Framer Motion</span>
+          </div>
+        </div>
+
+        <!-- Skill 3: Backend -->
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon pink">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend & Database</h3>
+          <p>Designing robust server-side architectures and efficient database schemas for scalable apps.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+
+        <!-- Skill 4: DSA -->
+        <div class="skill-card reveal reveal-delay-4">
+          <div class="skill-icon amber">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>DSA & Problem Solving</h3>
+          <p>Continuously honing competitive programming skills with comprehensive DSA implementations.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Arrays</span>
+            <span class="skill-tag">Trees</span>
+            <span class="skill-tag">Graphs</span>
+            <span class="skill-tag">DP</span>
+            <span class="skill-tag">Sorting</span>
+          </div>
+        </div>
+
+        <!-- Skill 5: Tools -->
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon purple">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Tools & Platforms</h3>
+          <p>Proficient with modern developer tools and version control workflows for efficient collaboration.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">OpenCV</span>
+          </div>
+        </div>
+
+        <!-- Skill 6: AI/ML -->
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon cyan">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>AI & Automation</h3>
+          <p>Exploring AI-powered applications, image processing, and automation solutions with Python.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">AI Chatbot</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">Web Scraping</span>
+            <span class="skill-tag">Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS SECTION ═══════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">
+          Featured <span class="highlight">Projects</span>
+        </h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="dsa">DSA</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project: Smart Bhopal Backend -->
+        <div class="project-card reveal" data-category="fullstack">
+          <div class="project-image">
+            <div class="gradient-overlay g1">🏙️</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">Python</span>
+              <span class="project-date">Jun 2026</span>
+            </div>
+            <h3>Smart Bhopal Backend</h3>
+            <p>A smart city backend system providing APIs for intelligent urban services and data management.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>REST API</span>
+              <span>Database</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/smart_bhopal_backend" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Crewly -->
+        <div class="project-card reveal" data-category="frontend">
+          <div class="project-image">
+            <div class="gradient-overlay g2">🎯</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">JavaScript</span>
+              <span class="project-date">May 2026</span>
+            </div>
+            <h3>Crewly</h3>
+            <p>A creator collaboration platform connecting YouTubers, influencers & content creators with editors, designers & service providers.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Vite</span>
+              <span>Tailwind</span>
+              <span>Framer Motion</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/Crewly" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: NutriVerse -->
+        <div class="project-card reveal" data-category="fullstack">
+          <div class="project-image">
+            <div class="gradient-overlay g3">🥗</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">JavaScript</span>
+              <span class="project-date">Jun 2026</span>
+            </div>
+            <h3>NutriVerse</h3>
+            <p>A comprehensive nutrition and health tracking application helping users manage their dietary needs and wellness goals.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/NutriVerse" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: AI Resume Analyzer -->
+        <div class="project-card reveal" data-category="python">
+          <div class="project-image">
+            <div class="gradient-overlay g4">📄</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">HTML</span>
+              <span class="project-date">Jun 2026</span>
+            </div>
+            <h3>AI Resume Analyzer</h3>
+            <p>An intelligent resume analysis tool that leverages AI to parse, evaluate, and provide actionable feedback on resumes.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>AI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/Ai-Resume-analyzer" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Where Is My Milk -->
+        <div class="project-card reveal" data-category="fullstack">
+          <div class="project-image">
+            <div class="gradient-overlay g5">🥛</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">HTML</span>
+              <span class="project-date">May 2026</span>
+            </div>
+            <h3>Where Is My Milk</h3>
+            <p>A smart dairy marketplace connecting milk sellers & buyers with dashboards, dairy map, milk ledger, community hub & marketplace.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Java</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/Where-Is-My-Milk" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: FindMyStuff -->
+        <div class="project-card reveal" data-category="frontend">
+          <div class="project-image">
+            <div class="gradient-overlay g6">🔍</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">JavaScript</span>
+              <span class="project-date">Mar 2026</span>
+            </div>
+            <h3>FindMyStuff</h3>
+            <p>A Lost and Found website for college students. Helps students report lost items or post things they've found easily.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/FindMyStuff" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Python Projects -->
+        <div class="project-card reveal" data-category="python">
+          <div class="project-image">
+            <div class="gradient-overlay g2">🐍</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">Python</span>
+              <span class="project-date">Jun 2026</span>
+            </div>
+            <h3>55+ Python Mini Projects</h3>
+            <p>Games, AI Chatbot, Web Scraper, Password Tools, File Utilities, Calculators, Text Processing & more.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Automation</span>
+              <span>Web Scraping</span>
+              <span>AI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/Python-Projects" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Complete DSA C++ -->
+        <div class="project-card reveal" data-category="dsa">
+          <div class="project-image">
+            <div class="gradient-overlay g1">🧠</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">C++</span>
+              <span class="project-date">Jun 2026</span>
+            </div>
+            <h3>Complete DSA Using C++</h3>
+            <p>Mastering DSA problem-solving through C++. Modular implementations of core DSA concepts and competitive programming solutions.</p>
+            <div class="project-tech">
+              <span>C++</span>
+              <span>Algorithms</span>
+              <span>Data Structures</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/Complete-DSA-Using-Cpp" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Library Management -->
+        <div class="project-card reveal" data-category="fullstack">
+          <div class="project-image">
+            <div class="gradient-overlay g3">📚</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-lang">HTML / Python</span>
+              <span class="project-date">May 2026</span>
+            </div>
+            <h3>Library Management System</h3>
+            <p>A complete library management system built with Python, Flask, HTML/CSS and SQL database integration.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>SQL</span>
+              <span>HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RavendraPatel09/LibraryManagementSystem" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ JOURNEY / TIMELINE ═══════════ -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">My Path</span>
+        <h2 class="section-title">
+          The <span class="highlight">Journey</span> So Far
+        </h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2026 — Present</div>
+          <div class="timeline-content">
+            <h3>🚀 Full-Stack Development & AI</h3>
+            <p>Building advanced full-stack applications like Smart Bhopal Backend, Crewly, and AI Resume Analyzer. Exploring AI-powered tools and creator collaboration platforms with React, Flask, and modern technologies.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-date">2025 — 2026</div>
+          <div class="timeline-content">
+            <h3>🌱 DSA Mastery & Problem Solving</h3>
+            <p>Deep-diving into Data Structures & Algorithms with comprehensive implementations in both C++ and Python. Solving competitive programming challenges and building modular DSA learning resources.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-date">2024 — 2025</div>
+          <div class="timeline-content">
+            <h3>💻 Web Development & Python Projects</h3>
+            <p>Built 55+ Python mini-projects including Games, AI Chatbot, Web Scrapers, and automation tools. Created projects like FindMyStuff, Library Management System, and Public Distribution System.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-date">2023 — 2024</div>
+          <div class="timeline-content">
+            <h3>🎓 Started Programming Journey</h3>
+            <p>Began learning Python fundamentals, basic algorithms, image processing with OpenCV, and web development basics. Contributed to open-source and built foundational projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Stats -->
+      <div class="github-stats reveal">
+        <div class="github-stat-card">
+          <div class="number">15+</div>
+          <div class="label">Repositories</div>
+        </div>
+        <div class="github-stat-card">
+          <div class="number">5+</div>
+          <div class="label">Languages</div>
+        </div>
+        <div class="github-stat-card">
+          <div class="number">500+</div>
+          <div class="label">Contributions</div>
+        </div>
+        <div class="github-stat-card">
+          <div class="number">1</div>
+          <div class="label">Open Source Forks</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT SECTION ═══════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">
+          Let's <span class="highlight">Connect</span>
+        </h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Have an idea? Let's build it together.</h3>
+          <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing.
+            Feel free to reach out!
+          </p>
+          <div class="contact-links">
+            <a href="https://github.com/RavendraPatel09" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="icon github"><i class="fab fa-github"></i></div>
+              <div class="details">
+                <div class="label">GitHub</div>
+                <div class="value">RavendraPatel09</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ravendra-patel" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+              <div class="details">
+                <div class="label">LinkedIn</div>
+                <div class="value">Ravendra Patel</div>
+              </div>
+            </a>
+            <a href="mailto:ravendrapatel09@gmail.com" class="contact-link-item">
+              <div class="icon email"><i class="fas fa-envelope"></i></div>
+              <div class="details">
+                <div class="label">Email</div>
+                <div class="value">ravendrapatel09@gmail.com</div>
+              </div>
+            </a>
+            <div class="contact-link-item">
+              <div class="icon location"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="details">
+                <div class="label">Location</div>
+                <div class="value">Madhya Pradesh, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal reveal-delay-2" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required id="form-name" />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required id="form-email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" id="form-subject" />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" required id="form-message"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="form-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          © 2026 Ravendra Patel. Crafted with <span class="heart">♥</span> and lots of ☕
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/RavendraPatel09" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ravendra-patel" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:ravendrapatel09@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
