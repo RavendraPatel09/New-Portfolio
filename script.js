@@ -1,9 +1,4 @@
-/* ═══════════════════════════════════════════════════════════════
-   RAVENDRA PATEL — PORTFOLIO JS
-   Advanced Interactions, Particles, Scroll Reveals & More
-   ═══════════════════════════════════════════════════════════════ */
 
-// ── Page Loader ──
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
   setTimeout(() => {
