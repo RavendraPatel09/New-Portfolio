@@ -8,8 +8,6 @@ window.addEventListener('load', () => {
   }, 800);
 });
 
-
-
 // ── Navbar Scroll Effect ──
 const navbar = document.getElementById('navbar');
 let lastScroll = 0;
